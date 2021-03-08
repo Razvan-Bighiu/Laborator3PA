@@ -1,11 +1,12 @@
 package ro.uaic.info;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class City {
 
     private String name;
-    private List<Location> locations;
+    private List<Location> locations = new ArrayList<>();
 
     public City(String name) {
         this.name = name;
@@ -23,8 +24,8 @@ public class City {
         return locations;
     }
 
-    public void addLocations(String name) {
-        this.locations.add(new Location(name));
+    public void addLocations(Location name) {
+        this.locations.add(name);
     }
 
 }

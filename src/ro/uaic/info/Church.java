@@ -15,10 +15,16 @@ public class Church extends Location implements Visitable{
 
     @Override
     public boolean isOpen(int hour) {
-            if(hour <= openHours[1] && hour <= openHours[0]){
-                return true;
-            }
-            else
-                return false;
+        return hour <= openHours[1] && hour <= openHours[0];
+    }
+
+    @Override
+    public int getOpeninghour() {
+        return this.openHours[0];
+    }
+
+    @Override
+    public int getClosinghour() {
+        return this.openHours[1];
     }
 }
