@@ -2,7 +2,7 @@ package ro.uaic.info;
 
 public class Museum extends Location implements Payable,Visitable{
 
-    private int[] openHours;//ex: openHours[0]= opening hour -> 0800
+    private int[] openHours = new int[2];//ex: openHours[0]= opening hour -> 0800
     private float price;
 
     public Museum(String name) {
@@ -28,12 +28,12 @@ public class Museum extends Location implements Payable,Visitable{
     }
 
     @Override
-    public int getOpeninghour() {
+    public int getOpeningHour() {
         return this.openHours[0];
     }
 
     @Override
-    public int getClosinghour() {
+    public int getClosingHour() {
         return this.openHours[1];
     }
 

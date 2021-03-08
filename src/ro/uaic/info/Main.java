@@ -46,5 +46,7 @@ public class Main {
         v4.addCost(v6,10);
 
         v5.addCost(v6,20);
+
+        iasi.printLocations();
     }
 }

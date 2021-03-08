@@ -28,4 +28,10 @@ public class City {
         this.locations.add(name);
     }
 
+    public void printLocations(){
+        for(int i=0;i<locations.size();i++){
+            System.out.println(locations.get(i).name);
+        }
+    }
+
 }

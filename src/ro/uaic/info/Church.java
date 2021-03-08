@@ -2,7 +2,7 @@ package ro.uaic.info;
 
 public class Church extends Location implements Visitable{
 
-    private int[] openHours;
+    private int[] openHours = new int[2];
 
     public Church(String name) {
         super(name);
@@ -19,12 +19,12 @@ public class Church extends Location implements Visitable{
     }
 
     @Override
-    public int getOpeninghour() {
+    public int getOpeningHour() {
         return this.openHours[0];
     }
 
     @Override
-    public int getClosinghour() {
+    public int getClosingHour() {
         return this.openHours[1];
     }
 }
